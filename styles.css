@@ -80,6 +80,15 @@ textarea {
 }
 
 
+/*Credit*/
+#credit {
+    margin-top: 40px;
+    text-align: center;
+}
+
+a { text-decoration: none;}
+
+
 
 /*Note to self
 Radio buttons don't wrap neatly. To be looked at.*/
