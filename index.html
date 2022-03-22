@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Survey form</title>
+</head>
+<body>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <h1 id="title">Coffee time</h1>
+    <p id="description">How do you like yours?</p>
+
+    <form id="survey-form">
+
+        <div id="section-1" class="form-section">
+            <div id="personal">
+                <label id="name-label" for="firstname">First name :
+                    <input id="name" name="firstname" type="text" placeholder=" Starbuck" required>
+                </label>
+                <label id="email-label" for="email">Email :
+                    <input id="email" name="email" type="email" placeholder=" caffeine@wired.com" required>
+                </label>
+            </div>
+            <label id="number-label" for="cups">How many cups of coffee do you drink per day?
+                <input id="number" name="cups" type="number" min="0"max="20" placeholder=" 00">
+            </label>
+            <div id="dropdowns">
+                <label for="dropdown">Caffeine?
+                    <select id="dropdown">
+                        <option value="caffeine">Caffeine</option>
+                        <option value="decaf">Decaf</option>
+                    </select>
+                </label>
+                <label for="colour">Black or white?
+                    <select>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+
+        <div id="section-2" class="form-section">
+            <p>What's your style?<br>An eclectic mix? - pick the closest.</p>
+            <input name="style" type="radio" value="strong">
+            Quick and strong espresso<br>
+            <input name="style" type="radio" value="subtle">
+            Subtle, flavoursome, exotic<br>
+            <input name="style" type="radio" value="sweet">
+            Sweet and syrupy - essentially a dessert with a hint of coffee<br>
+            <input name="style" type="radio" value="vegan">
+            Eco vegan - alt milk in a recyclable cup<br>
+            <input name="style" type="radio" value="whatevs">
+            As it comes - don't much care as long as it's made by someone else<br>
+            <input name="style" type="radio" value="artisan">
+            Artisan - the best and freshest beans carefully sourced<br>
+        </div>
+
+        <div id="section-3" class="form-section">
+            <p>Which coffee shops do you frequent?</p>
+            <div id="checks">
+                <label><input name="outlets" type="checkbox" value="starbucks">Starbucks</label>
+                <label><input name="outlets" type="checkbox" value="starbucks">Nero</label>
+                <label><input name="outlets" type="checkbox" value="starbucks">Costa</label>
+                <label><input name="outlets" type="checkbox" value="starbucks">Coffee Republic</label>
+                <label><input name="outlets" type="checkbox" value="starbucks">AMT</label>
+                <label><input name="outlets" type="checkbox" value="starbucks">Monmouth</label>
+                <label><input name="outlets" type="checkbox" value="starbucks">Grind</label>
+                <label><input name="outlets" type="checkbox" value="starbucks">Independent</label>
+            </div>
+        </div>
+        </div>
+
+        <div id="section-4" class="form-section">
+            <p>Anything else coffee related you fancy saying?</p>
+            <textarea name="comments"
+            placeholder="I drink 9 cups of Grumpy Mule Organic Columbia a day. I'm 92 and I run marathons. To be fair the two could be completely unrelated."></textarea>
+        </div>
+
+        <input id="submit" type="submit" name="submit" valur="SUBMIT">
+    </form>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #444;
+    margin: 40px auto;
+    max-width: 850px;
+}
+
+#title, #description {
+    padding-left: 40px;
+}
+
+.form-section {
+    padding: 40px;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    margin: 40px auto;
+}
+
+select, textarea, #submit { color: #555; }
+
+
+
+/*First section*/
+#section-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#section-1 input, select {
+    height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+input[type="number"] { width: 40px; }
+input[type="email"] { width: 300px; }
+
+#personal, #dropdowns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+
+/*Radio buttons*/
+input[type="radio"] {
+    margin-left: 3vw;
+}
+
+
+
+/*Check boxes*/
+#checks {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    gap: 10px;
+}
+
+#checks label { margin-right: 60px; }
+input[type="checkbox"] { margin-right: 8px; }
+
+
+/*Text area*/
+textarea {
+    width: 94%;
+    height: 150px;
+    padding: 20px;
+    border-color: darkgray;
+}
+
+
+/*Submit button*/
+#submit {
+    padding: 10px 24px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 40px;
+}
+
+
+
+/*Note to self
+Radio buttons don't wrap neatly. To be looked at.*/
+
