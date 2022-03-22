@@ -19,7 +19,6 @@ body {
 select, textarea, #submit { color: #555; }
 
 
-
 /*First section*/
 #section-1 {
     display: flex;
@@ -41,10 +40,17 @@ input[type="email"] { width: 300px; }
 }
 
 
-
 /*Radio buttons*/
-input[type="radio"] {
+#radios {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
     margin-left: 3vw;
+}
+
+#radios label {
+    display: flex;
+    gap: 8px;
 }
 
 
@@ -89,5 +95,8 @@ a { text-decoration: none;}
 
 
 /*Note to self
-Radio buttons don't wrap neatly. To be looked at.*/
+Radio buttons don't wrap neatly. To be looked at.
+
+Update: done. Wrap in labels and connect with for. Then use flex.
+*/
 
