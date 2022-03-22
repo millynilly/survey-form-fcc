@@ -28,12 +28,10 @@ select, textarea, #submit { color: #555; }
 }
 
 #section-1 input, select {
-    height: 30px;
     font-family: 'Courier New', Courier, monospace;
-
+    padding: 10px;
 }
 
-input[type="number"] { width: 40px; }
 input[type="email"] { width: 300px; }
 
 #personal, #dropdowns {
